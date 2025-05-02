@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ورود به نشتی‌ها</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      direction: rtl;
+      text-align: center;
+      background-color: #f0f0f0;
+      padding-top: 100px;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #2b5876;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>ورود به اپلیکیشن نشتی‌ها</h2>
+  <input type="text" id="username" placeholder="نام کاربری"><br>
+  <input type="password" id="password" placeholder="رمز عبور"><br>
+  <button onclick="login()">ورود</button>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+
+      if (user === 'admin' && pass === '1234') {
+        alert('ورود موفقیت‌آمیز بود!');
+        // بعداً می‌تونی به صفحه وظایف هدایتش کنی
+        // window.location.href = 'tasks.html';
+      } else {
+        alert('نام کاربری یا رمز اشتباه است!');
+      }
+    }
+  </script>
+</body>
+</html>
