@@ -1,0 +1,15 @@
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    direction: rtl;
+}
+input, button {
+    margin: 5px 0;
+    padding: 5px;
+}
+.task {
+    border: 1px solid #aaa;
+    padding: 10px;
+    margin: 5px 0;
+}
